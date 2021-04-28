@@ -1,5 +1,7 @@
+@Library('gie@feature/credential') _
+
 node {
-    stage('Build') {
+    stdStage('Build') {
         echo 'Building....'
         sh 'echo Hello world from develop'
         sh 'pwd > mon-fichier.txt'
